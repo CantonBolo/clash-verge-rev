@@ -153,7 +153,7 @@ interface IClashInfo {
 
 interface IProfileItem {
   uid: string;
-  type?: "local" | "remote" | "merge" | "script";
+  type?: "local" | "remote" | "merge" | "script" | "collection";
   name?: string;
   desc?: string;
   file?: string;

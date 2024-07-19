@@ -143,6 +143,7 @@ export const ProfileViewer = forwardRef<ProfileViewerRef, Props>(
     const formType = watch("type");
     const isRemote = formType === "remote";
     const isLocal = formType === "local";
+    const isCollection = formType === "collection";
 
     return (
       <BaseDialog
@@ -165,6 +166,7 @@ export const ProfileViewer = forwardRef<ProfileViewerRef, Props>(
               <Select {...field} autoFocus label={t("Type")}>
                 <MenuItem value="remote">Remote</MenuItem>
                 <MenuItem value="local">Local</MenuItem>
+                <MenuItem value="collection">Collection</MenuItem>
               </Select>
             </FormControl>
           )}
